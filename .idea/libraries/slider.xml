@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="slider">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/images/slider/electricity.zip!/" />
+      <root url="jar://$PROJECT_DIR$/images/slider/mobile.zip!/" />
+      <root url="jar://$PROJECT_DIR$/images/slider/landline.zip!/" />
+      <root url="jar://$PROJECT_DIR$/images/slider/brodband.zip!/" />
+      <root url="jar://$PROJECT_DIR$/images/slider/dth.zip!/" />
+      <root url="jar://$PROJECT_DIR$/images/slider/water.zip!/" />
+      <root url="jar://$PROJECT_DIR$/images/slider/gas.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
