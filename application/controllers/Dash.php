@@ -5,7 +5,7 @@ class Dash extends CI_Controller
 {
     public function index()
     {
-        $this->load->view('Dash_view');  
+        $this->template->load('master_files/tamplate_master', 'Dash_view');  
     }
     
 }
