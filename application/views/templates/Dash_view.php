@@ -5,7 +5,7 @@
                 <div class="container">
                     <div class="section py-4">
                         <div class="container">
-                            <!-- <ul class="nav secondary-nav alternate" id="myTab" role="tablist">
+                            <ul class="nav secondary-nav alternate" id="myTab" role="tablist">
                                 <li class="nav-item active">
                                     <a class="nav-link" id="mobile-recharge-tab" data-bs-toggle="tab" href="#mobile-recharge" aria-controls="mobile-recharge">
                                         <span><img src="../Recharge/images/recharge/Mobile.png" alt="" width="70px" height="70px"></span>Mobile
@@ -49,7 +49,7 @@
                                         More
                                     </a>
                                 </li>
-                            </ul> -->
+                            </ul>
                         </div>
                         <div class="tab-content my-3" id="myTabContent">
                             <div class="tab-pane fade show active" id="mobile-recharge" role="tabpanel" aria-labelledby="mobile-recharge-tab">
