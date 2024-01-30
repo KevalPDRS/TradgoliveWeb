@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link href="images/TardgoLogo.png" rel="icon" />
+    <title>My Profile</title>
+    <meta name="description" content="My Profile">
+
+    <!-- Web Fonts
+============================================= -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Stylesheet
+============================================= -->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="css/extra.css" />
+    <link rel="stylesheet" type="text/css" href="css/MyProfile.css" />
+
+    <!-- For Date Range Picker -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/data-range-picker.css" /> -->
+
+    <!-- For Date Range Picker  -->
+    <!-- Include Required Prerequisites -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/1/jquery.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/data-range-picker.css" /> -->
+    <!-- Include Date Range Picker -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" /> -->
+    <!-- For Date Range Picker End  -->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script
+        src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="ring">
+            <img src="images/TardgoLogo.png" alt="" style="border-radius: 50%; width: 120px;">
+            <span></span>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Document Wrapper   
+============================================= -->
+    <div id="main-wrapper">
+
+        <!-- Header
+  ============================================= -->
+        <header id="header">
+            <div class="container">
+                <div class="header-row">
+                    <div class="header-column justify-content-start">
+
+                        <!-- Logo
+          ============================================= -->
+                        <div class="logo me-2 me-lg-3">
+                            <a class="d-flex" href="index-2.html" title="Tradgo Recharge & Bill Payments">
+                                <svg class="tradgo_icon" viewBox="0 0 174 49" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.29785 10.5098V4.40625H13.6484V10.5098H19.8008V17.7852H13.6484V27.2578C13.6484 28.8854 14.2751 29.8945 15.5283 30.2852C16.6188 30.6758 18.043 30.7165 19.8008 30.4072V38.0488C18.0918 38.3092 16.277 38.4395 14.3564 38.4395C10.7594 38.4395 8.18783 37.5605 6.6416 35.8027C5.0791 34.0449 4.29785 31.3105 4.29785 27.5996V17.7852H0.977539V10.5098H4.29785ZM23.7314 38V10.5098H32.667L33.1064 13.5615C34.6201 11.234 37.4359 10.0622 41.5537 10.0459V17.9561C35.9222 17.9561 33.1064 20.0557 33.1064 24.2549V38H23.7314ZM55.0791 10.0215C57.0973 10.0215 58.847 10.3551 60.3281 11.0225C61.8255 11.6735 62.9079 12.5931 63.5752 13.7812L64.0146 10.5098H72.9502V38H64.0146L63.5752 34.7285C62.9404 35.9329 61.8825 36.8607 60.4014 37.5117C58.9202 38.1465 57.1462 38.4639 55.0791 38.4639C51.4984 38.4639 48.5036 37.1374 46.0947 34.4844C43.6859 31.8639 42.4814 28.4541 42.4814 24.2549C42.4814 20.0719 43.6859 16.654 46.0947 14.001C48.5036 11.348 51.4984 10.0215 55.0791 10.0215ZM53.541 28.8203C54.6478 29.9759 56.0394 30.5537 57.7158 30.5537C59.376 30.5537 60.7676 29.9759 61.8906 28.8203C63.0137 27.681 63.5752 26.1592 63.5752 24.2549C63.5752 22.3506 63.0137 20.8206 61.8906 19.665C60.7676 18.5257 59.376 17.9561 57.7158 17.9561C56.0231 17.9561 54.6315 18.5257 53.541 19.665C52.418 20.8206 51.8564 22.3506 51.8564 24.2549C51.8564 26.1592 52.418 27.681 53.541 28.8203ZM88.7217 10.0215C90.7399 10.0215 92.4896 10.3551 93.9707 11.0225C95.4681 11.6735 96.5505 12.5931 97.2178 13.7812V0.5H106.593V38H97.6572L97.2178 34.7285C96.583 35.9329 95.5251 36.8607 94.0439 37.5117C92.5628 38.1465 90.7887 38.4639 88.7217 38.4639C85.141 38.4639 82.1462 37.1374 79.7373 34.4844C77.3285 31.8639 76.124 28.4541 76.124 24.2549C76.124 20.0719 77.3285 16.654 79.7373 14.001C82.1462 11.348 85.141 10.0215 88.7217 10.0215ZM91.3584 30.5537C93.0186 30.5537 94.4102 29.9759 95.5332 28.8203C96.6562 27.681 97.2178 26.1592 97.2178 24.2549C97.2178 22.3506 96.6562 20.8206 95.5332 19.665C94.4102 18.5257 93.0186 17.9561 91.3584 17.9561C89.6657 17.9561 88.2741 18.5257 87.1836 19.665C86.0605 20.8206 85.499 22.3506 85.499 24.2549C85.499 26.1592 86.0687 27.681 87.208 28.8203C88.3311 29.9759 89.7145 30.5537 91.3584 30.5537Z"
+                                        fill="#1B1464" />
+                                    <path
+                                        d="M130.86 13.7812L131.3 10.5098H140.235V36.0469C140.235 38.6999 139.584 40.9867 138.282 42.9072C136.98 44.7952 135.239 46.195 133.058 47.1064C130.844 48.0179 128.329 48.4736 125.514 48.4736C119.801 48.4736 115.219 46.5531 111.769 42.7119L116.09 37.7559C118.124 39.9857 121.021 41.1006 124.781 41.1006C126.458 41.1006 127.89 40.6042 129.078 39.6113C130.266 38.6185 130.86 37.292 130.86 35.6318V33.6055C129.656 35.8353 126.824 36.9502 122.364 36.9502C120.623 36.9502 118.979 36.6328 117.433 35.998C115.886 35.3633 114.544 34.4681 113.404 33.3125C112.265 32.1569 111.37 30.7409 110.719 29.0645C110.084 27.388 109.767 25.5895 109.767 23.6689C109.767 19.7464 110.979 16.4831 113.404 13.8789C115.829 11.3073 118.816 10.0215 122.364 10.0215C124.382 10.0215 126.132 10.3551 127.613 11.0225C129.111 11.6735 130.193 12.5931 130.86 13.7812ZM125.001 29.4307C126.645 29.4307 128.036 28.8854 129.176 27.7949C130.299 26.6882 130.86 25.3128 130.86 23.6689C130.86 22.0251 130.299 20.6579 129.176 19.5674C128.036 18.4932 126.645 17.9561 125.001 17.9561C123.39 17.9561 122.006 18.4932 120.851 19.5674C119.711 20.6579 119.142 22.0251 119.142 23.6689C119.142 25.3291 119.711 26.7044 120.851 27.7949C121.99 28.8854 123.373 29.4307 125.001 29.4307ZM164.454 37.4873C162.647 38.1058 160.711 38.415 158.644 38.415C156.576 38.415 154.64 38.1058 152.833 37.4873C148.943 36.1527 146.217 33.752 144.654 30.2852C143.824 28.4785 143.409 26.4684 143.409 24.2549C143.409 22.0576 143.824 20.0394 144.654 18.2002C146.201 14.766 148.927 12.3652 152.833 10.998C154.64 10.3796 156.576 10.0703 158.644 10.0703C160.711 10.0703 162.647 10.3796 164.454 10.998C168.36 12.3652 171.095 14.766 172.657 18.2002C173.471 20.0557 173.878 22.0739 173.878 24.2549C173.878 26.4521 173.471 28.4622 172.657 30.2852C171.078 33.752 168.344 36.1527 164.454 37.4873ZM154.444 28.8203C155.567 29.9759 156.967 30.5537 158.644 30.5537C160.304 30.5537 161.695 29.9759 162.818 28.8203C163.941 27.681 164.503 26.1592 164.503 24.2549C164.503 22.3506 163.941 20.8206 162.818 19.665C161.695 18.5257 160.304 17.9561 158.644 17.9561C156.967 17.9561 155.567 18.5257 154.444 19.665C153.321 20.8206 152.76 22.3506 152.76 24.2549C152.76 26.1592 153.321 27.681 154.444 28.8203Z"
+                                        fill="#20A7DB" />
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- Logo end -->
+                    </div>
+                    <div class="header-column justify-content-end">
+                        <a href="#">
+                            <svg class="notificationIcon" style="margin: 0px 10px" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1155_5641)">
+                                    <path
+                                        d="M5 18H19V11.031C19 7.148 15.866 4 12 4C8.134 4 5 7.148 5 11.031V18ZM12 2C16.97 2 21 6.043 21 11.031V20H3V11.031C3 6.043 7.03 2 12 2ZM9.5 21H14.5C14.5 21.663 14.2366 22.2989 13.7678 22.7678C13.2989 23.2366 12.663 23.5 12 23.5C11.337 23.5 10.7011 23.2366 10.2322 22.7678C9.76339 22.2989 9.5 21.663 9.5 21Z"
+                                        fill="#A6A6A7" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1155_5641">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="supportAgent" style="margin: 0px 10px" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21 12.22C21 6.73 16.74 3 12 3C7.31 3 3 6.65 3 12.28C2.4 12.62 2 13.26 2 14V16C2 17.1 2.9 18 4 18H5V11.9C5 8.03 8.13 4.9 12 4.9C15.87 4.9 19 8.03 19 11.9V19H11V21H19C20.1 21 21 20.1 21 19V17.78C21.59 17.47 22 16.86 22 16.14V13.84C22 13.14 21.59 12.53 21 12.22Z"
+                                    fill="#A6A6A7" />
+                                <path
+                                    d="M9 14C9.55228 14 10 13.5523 10 13C10 12.4477 9.55228 12 9 12C8.44772 12 8 12.4477 8 13C8 13.5523 8.44772 14 9 14Z"
+                                    fill="#A6A6A7" />
+                                <path
+                                    d="M15 14C15.5523 14 16 13.5523 16 13C16 12.4477 15.5523 12 15 12C14.4477 12 14 12.4477 14 13C14 13.5523 14.4477 14 15 14Z"
+                                    fill="#A6A6A7" />
+                                <path
+                                    d="M18 11.03C17.52 8.18 15.04 6 12.05 6C9.02 6 5.76 8.51 6.02 12.45C8.49 11.44 10.35 9.24 10.88 6.56C12.19 9.19 14.88 11 18 11.03Z"
+                                    fill="#A6A6A7" />
+                            </svg>
+                        </a>
+                        <!-- Collapse Button
+		  =============================== -->
+                        <div class="vr mx-2 h-25 my-auto"></div>
+                        <!-- Login Signup
+		  =============================== -->
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <ul class="nav">
+                                    <li class="dropdown">
+                                        <a class="nav-link head_menu" style="color: #A6A6A7;padding: 4vh 0px;"
+                                            id="navbarDropdown" data-bs-toggle="modal" data-bs-target="" role=""
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="d-none d-sm-inline-block">Login / Sign up</span>
+                                            <span class="user-icon ms-sm-2"> <i class="fas fa-user"></i></span>
+                                        </a>
+                                        <ul class="dropdown-menu"
+                                            style="position: absolute; top: 10vh; right: -25px; width: 280px; ">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <div>
+                                                        <div class="text-dark" style="font-size: 18px;">Keval Punani
+                                                        </div>
+                                                        <div class="text-primary" style="font-size: 14px;">1234567890
+                                                        </div>
+                                                    </div>
+                                                    <h5></h5>
+                                                    <h5 class="text-primary"></h5>
+                                                    <h5 class="text-primary"></h5>
+                                                </a>
+                                            </li>
+                                            <hr style="margin: 5px 0px;">
+                                            <li>
+                                                <div class="container p-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="col-7">
+                                                            <div class="d-flex flex-column justify-content-start">
+                                                                <h6 style="font-size: 14px;">Wallet Balance</h6>
+                                                                <div style="font-size: 20px;">₹ <span class="fw-600"
+                                                                        style="font-size: 20px;">888888</span></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-5 add_money" data-bs-toggle="modal"
+                                                            data-bs-target="#Add_Money_modal">
+                                                            <div class="d-flex justify-content-end">
+                                                                <div class="d-flex flex-column justify-content-end">
+                                                                    <div class="d-flex align-items-center justify-content-end"
+                                                                        style="margin: 8px 0px 8px 0px;">
+                                                                        <h6
+                                                                            style="font-size: 18px; margin: 8px 8px 8px 0px;">
+                                                                            Add</h6>
+                                                                        <img src="images/Add Money.png" alt="Add Money"
+                                                                            width="30px" height="30px">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <hr style="margin: 5px 0px;">
+                                            <li>
+                                                <a class="dropdown-item" href="MyProfile.html"><img
+                                                        src="images/Home_dropdown/My Profile.png" alt="">My
+                                                    Profile</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="ReportHistory.html"><img
+                                                        src="images/Home_dropdown/Reports.png" alt="">Reports</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"><img
+                                                        src="images/Home_dropdown/24x7 Help & Support.png" alt="">24x7
+                                                    Help & Support</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"><img
+                                                        src="images/Home_dropdown/Order & Booking.png" alt="">Order &
+                                                    Booking</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"><img
+                                                        src="images/Home_dropdown/Your Business.png" alt="">Your
+                                                    Business</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"><img
+                                                        src="images/Home_dropdown/Policies.png" alt="">Policies</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"><img
+                                                        src="images/Home_dropdown/Refer & Earn.png" alt="">Refer
+                                                    & Earn</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"><img
+                                                        src="images/Home_dropdown/Cashback & Offerrs.png"
+                                                        alt="">Cashback & Offerrs</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"><img
+                                                        src="images/Home_dropdown/Help Tutorial.png" alt="">Help
+                                                    Tutorial</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"><img
+                                                        src="images/Home_dropdown/Rate & Review.png" alt="">Rate
+                                                    & Review</a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <img src="images/Home_dropdown/Logout.png" alt="">
+                                                <a data-bs-toggle="modal" data-bs-target="#login-check-modal" href="#">
+                                                    Logout
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <div class="mt-4"></div>
+
+        <!-- Content
+============================================= -->
+        <div id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <!-- Nav Link
+          ============================================= -->
+                        <ul class="nav nav-pills ReportHistory alternate flex-lg-column mb-3 mb-lg-0 sticky-top"
+                            role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#Profile_MyProfile">
+                                    Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#MyAddress_MyProfile">
+                                    My Address</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#ChangePassword_MyProfile">
+                                    Change Password</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#ChangeTransactionPIN_MyProfile">
+                                    Change Transaction PIN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#Notification_MyProfile">
+                                    Notification</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#Language_MyProfile">
+                                    Language</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#ContactSupport_MyProfile">
+                                    Contact Support</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#TermsOfServices_MyProfile">
+                                    Terms of Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#Logout_MyProfile">
+                                    Logout</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#DeletAccount_MyProfile">
+                                    Delet Account</a>
+                            </li>
+                        </ul>
+                        <!-- Nav Link end -->
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="tab-content bg-white shadow-md rounded p-3">
+                            <div id="Profile_MyProfile" class="container tab-pane active"><br>
+                                <h3>Profile</h3>
+                                <hr class="mx-n4">
+                            </div>
+                            <div id="MyAddress_MyProfile" class="container tab-pane fade"><br>
+                                <h3>My Address</h3>
+                                <hr class="mx-n4">
+                                <div class="container">
+                                    <div class="card MyAddressItem mb-3">
+                                        <div class="p-3">
+                                            <img src="images/MyProfile/AddNewAddress.svg" alt="">ADD NEW ADDRESS
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-3 position-relative">
+                                            <div class="card MyAddressItem">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Keval Punani 1</h5>
+                                                    <div class="rounded-4 px-2 py-1 position-absolute top-0 end-0 mt-3 me-3"
+                                                        style="background-color: #EBEEFA;">Home</div>
+                                                    <div class="rounded-4 px-2 py-1 position-absolute top-0 end-0 mt-3 me-7"
+                                                        style="background-color: #9CCB9A;">IsPrimary</div>
+                                                    <p class="card-text">316 Trade Square, Near Parishkar Flat, Khokhra
+                                                        Ahmedabad 380008</p>
+                                                    <p class="card-text">Phone: 98989898</p>
+                                                    <div class="row text-center">
+                                                        <div class="col-md-4">
+                                                            <a href="#" data-bs-toggle="offcanvas"
+                                                                data-bs-target="#MyAddressItemEdit">
+                                                                <div class="card px-3 py-2">Edit</div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <a href="#" data-bs-toggle="modal"
+                                                                data-bs-target="#RemoveAddressModal">
+                                                                <div class="card px-3 py-2">Remove</div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <a href="#">
+                                                                <div class="card px-3 py-2">Is Primary</div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 position-relative">
+                                            <div class="card MyAddressItem">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Keval Punani 2</h5>
+                                                    <div class="rounded-4 px-2 py-1 position-absolute top-0 end-0 mt-3 me-3"
+                                                        style="background-color: #EBEEFA;">Office</div>
+                                                    <p class="card-text">316 Trade Square, Near Parishkar Flat, Khokhra
+                                                        Ahmedabad 380008</p>
+                                                    <p class="card-text">Phone: 98989898</p>
+                                                    <div class="row text-center">
+                                                        <div class="col-md-4">
+                                                            <a href="#" data-bs-toggle="offcanvas"
+                                                                data-bs-target="#MyAddressItemEdit">
+                                                                <div class="card px-3 py-2">Edit</div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <a href="#" data-bs-toggle="modal"
+                                                                data-bs-target="#RemoveAddressModal">
+                                                                <div class="card px-3 py-2">Remove</div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <a href="#">
+                                                                <div class="card px-3 py-2">Is Primary</div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ChangePassword_MyProfile" class="container tab-pane fade"><br>
+                                <h3>Change Password</h3>
+                                <hr class="mx-n4">
+                                <div class="row g-4">
+                                    <div class="col-lg-8">
+                                        <form id="changePassword" method="post">
+                                            <div class="mb-3">
+                                                <label class="form-label" for="existingPassword">Current
+                                                    Password</label>
+                                                <input type="text" class="form-control" data-bv-field="existingpassword"
+                                                    id="existingPassword" required="" placeholder="Current Password">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label" for="newPassword">New Password</label>
+                                                <input type="text" class="form-control" data-bv-field="newpassword"
+                                                    id="newPassword" required="" placeholder="New Password">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label" for="existingPassword">Confirm New
+                                                    Password</label>
+                                                <input type="text" class="form-control" data-bv-field="confirmgpassword"
+                                                    id="confirmPassword" required="" placeholder="Confirm New Password">
+                                            </div>
+                                            <button class="btn btn-primary" type="submit">Change Password</button>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <!-- Privacy Information
+                                  ============================================= -->
+                                        <div class="bg-light-2 rounded p-4">
+                                            <h3 class="text-4 mb-2">Change Password</h3>
+                                            <p class="mb-0">Secure access to your Tradgo account using a strong
+                                                login password.</p>
+                                        </div>
+                                        <!-- Privacy Information end -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ChangeTransactionPIN_MyProfile" class="container tab-pane fade"><br>
+                                <h3>Change Transaction PIN</h3>
+                                <hr class="mx-n4">
+                                <div class="row g-4">
+                                    <div class="col-lg-8">
+                                        <form id="changePassword" method="post">
+                                            <div class="mb-3">
+                                                <label class="form-label" for="existingPassword">Current PIN</label>
+                                                <input type="text" class="form-control" data-bv-field="existingpassword"
+                                                    id="existingPassword" required="" placeholder="Current PIN">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label" for="newPassword">New PIN</label>
+                                                <input type="text" class="form-control" data-bv-field="newpassword"
+                                                    id="newPassword" required="" placeholder="New PIN">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label" for="existingPassword">Confirm PIN</label>
+                                                <input type="text" class="form-control" data-bv-field="confirmgpassword"
+                                                    id="confirmPassword" required="" placeholder="Confirm PIN">
+                                            </div>
+                                            <button class="btn btn-primary" type="submit">Change Transaction
+                                                PIN</button>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="bg-light-2 rounded p-4">
+                                            <h3 class="text-4 mb-2">Change Transaction PIN</h3>
+                                            <p class="mb-0">Secure access to your UPI linked account using a secure PIN
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Notification_MyProfile" class="container tab-pane fade"><br>
+                                <h3>Notification</h3>
+                                <hr class="mx-n4">
+                            </div>
+                            <div id="Language_MyProfile" class="container tab-pane fade"><br>
+                                <h3>Language</h3>
+                                <hr class="mx-n4">
+                            </div>
+                            <div id="ContactSupport_MyProfile" class="container tab-pane fade"><br>
+                                <h3>Contact Support</h3>
+                                <hr class="mx-n4">
+                            </div>
+                            <div id="TermsOfServices_MyProfile" class="container tab-pane fade"><br>
+                                <h3>Terms of Services</h3>
+                                <hr class="mx-n4">
+                            </div>
+                            <div id="Logout_MyProfile" class="container tab-pane fade"><br>
+                                <h3>Logout</h3>
+                                <hr class="mx-n4">
+                            </div>
+                            <div id="DeletAccount_MyProfile" class="container tab-pane fade"><br>
+                                <h3>Delet Account</h3>
+                                <hr class="mx-n4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content end -->
+
+        <!-- Footer
+          ============================================= -->
+        <footer id="footer">
+            <section class="section bg-white shadow-md pt-4 pb-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="featured-box text-center">
+                                <div class="featured-box-icon"> <i class="fas fa-lock"></i> </div>
+                                <h4>100% Secure Payments</h4>
+                                <p>Moving your card details to a much more secured place.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="featured-box text-center">
+                                <div class="featured-box-icon"> <i class="fas fa-thumbs-up"></i> </div>
+                                <h4>Trust pay</h4>
+                                <p>100% Payment Protection. Easy Return Policy.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="featured-box text-center">
+                                <div class="featured-box-icon"> <i class="fas fa-bullhorn"></i> </div>
+                                <h4>Refer & Earn</h4>
+                                <p>Invite a friend to sign up and earn up to ₹150.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="featured-box text-center">
+                                <div class="featured-box-icon"> <i class="far fa-life-ring"></i> </div>
+                                <h4>24X7 Support</h4>
+                                <p>We're here to help. Have a query and need help ? <a href="#">Click here</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container mt-4">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <p>Payment</p>
+                        <ul class="payments-types">
+                            <li><a href="#" target="_blank"> <img src="images/payment/visa.png" alt="visa"></a></li>
+                            <li><a href="#" target="_blank"> <img src="images/payment/discover.png" alt="discover"></a>
+                            </li>
+                            <li><a href="#" target="_blank"> <img src="images/payment/paypal.png" alt="paypal"
+                                        title="PayPal"></a>
+                            </li>
+                            <li><a href="#" target="_blank"> <img src="images/payment/american.png"
+                                        alt="american express"></a>
+                            </li>
+                            <li><a href="#" target="_blank"> <img src="images/payment/mastercard.png"
+                                        alt="discover"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Subscribe</p>
+                        <div class="input-group newsletter">
+                            <input class="form-control" placeholder="Your Email Address" name="newsletterEmail"
+                                id="newsletterEmail" type="text">
+                            <button class="btn btn-secondary shadow-none px-3" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-md-end flex-column">
+                        <p>Keep in touch</p>
+                        <ul class="social-icons">
+                            <li class="social-icons-facebook"><a href="https://m.facebook.com/tradgoindia"
+                                    target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="social-icons-twitter"><a href="https://twitter.com/Tradgo2" target="_blank"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li class="social-icons-youtube"><a href="https://www.youtube.com/@TradgoApp"
+                                    target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li class="social-icons-instagram"><a href="https://www.instagram.com/tradgo_app/"
+                                    target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="footer-copyright">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"> <a class="nav-link active" href="#">About Us</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Faq</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Support</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Terms of Use</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Privacy Policy</a> </li>
+                    </ul>
+                    <p class="copyright-text">Copyright © 2022 <a href="#">Tradgo</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+    <!-- Document Wrapper end -->
+
+    <!-- Back to Top
+============================================= -->
+    <a id="back-to-top" data-bs-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
+            class="fa fa-chevron-up"></i></a>
+
+
+    <!-- Recharge_StatusSuccess Modal
+=========================== -->
+    <div id="Recharge_StatusSuccess" class="modal fade" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-0">
+                <div class="modal-body py-4 px-0">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 mt-1 me-1 mt-sm-2 me-sm-2"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!--  Recharge_StatusSuccess
+      ====================== -->
+                    <div class="row" id="contentToConvert">
+                        <div class="col-11 col-md-11 mx-auto">
+                            <div class="col-lg-12 text-center mt-3">
+                                <p class="text-success"><img src="images/TardgoLogo.png" alt="TardgoLogo" width="120px">
+                                </p>
+                                <!-- <p class="text-success text-16 lh-1"><i class="fas fa-check-circle"></i></p> -->
+                                <!-- <p class="text-danger text-16 lh-1"><i class="fas fa-times-circle"></i></p> -->
+                                <h2 class="text-8 text-success">Recharge Successful</h2>
+                            </div>
+                            <div class="">
+                                <div class="rounded p-4 p-lg-6 mb-4">
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Payment Amount</div>
+                                        <div class="col-sm text-sm-end fw-600 text-5">₹289.0</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Profit</div>
+                                        <div class="col-sm text-sm-end fw-600 text-6 text-success">₹8.670</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Operator Name:</div>
+                                        <div class="col-sm text-sm-end fw-600"><img
+                                                src="images/Operator/Vodafone_icon.png" alt="Vodafone_icon"
+                                                style="width: 24px; margin-right: 6px;">Vodafone</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Mobile No.</div>
+                                        <div class="col-sm text-sm-end fw-600">98989898</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Recharge ID:</div>
+                                        <div class="col-sm text-sm-end fw-600">31275735</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Operator ID:</div>
+                                        <div class="col-sm text-sm-end fw-600">GJH2300260911220068</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Date & Time:</div>
+                                        <div class="col-sm text-sm-end fw-600">26-Nov-2023 09:11:39AM</div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button onclick="downloadPDF()"
+                                        class="btn btn-light border text-black-50 shadow-none"><i
+                                            class="fa fa-download"></i> Download
+                                        PDF</button>
+                                    <p class="mt-4 mb-0"><a href="#" class="btn btn-primary">Make another Recharge</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Recharge_StatusSuccess End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recharge_StatusSuccess End -->
+
+    <!-- Recharge_StatusFailure Modal
+=========================== -->
+    <div id="Recharge_StatusFailure" class="modal fade" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-0">
+                <div class="modal-body py-4 px-0">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 mt-1 me-1 mt-sm-2 me-sm-2"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!--  Recharge_StatusFailure
+    ====================== -->
+                    <div class="row" id="contentToConvert">
+                        <div class="col-11 col-md-11 mx-auto">
+                            <div class="col-lg-12 text-center mt-3">
+                                <p class="text-success"><img src="images/TardgoLogo.png" alt="TardgoLogo" width="120px">
+                                </p>
+                                <!-- <p class="text-success text-16 lh-1"><i class="fas fa-check-circle"></i></p> -->
+                                <!-- <p class="text-danger text-16 lh-1"><i class="fas fa-times-circle"></i></p> -->
+                                <h2 class="text-8 text-danger">Recharge Failure</h2>
+                            </div>
+                            <div class="">
+                                <div class="rounded p-4 p-lg-6 mb-4">
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Payment Amount</div>
+                                        <div class="col-sm text-sm-end fw-600 text-5">₹289.0</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Operator Name:</div>
+                                        <div class="col-sm text-sm-end fw-600"><img
+                                                src="images/Operator/Vodafone_icon.png" alt="Vodafone_icon"
+                                                style="width: 24px; margin-right: 6px;">Vodafone</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Mobile No.</div>
+                                        <div class="col-sm text-sm-end fw-600">98989898</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Recharge ID:</div>
+                                        <div class="col-sm text-sm-end fw-600">31275735</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Operator ID:</div>
+                                        <div class="col-sm text-sm-end fw-600">N/A</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Date & Time:</div>
+                                        <div class="col-sm text-sm-end fw-600">26-Nov-2023 09:11:39AM</div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button onclick="downloadPDF()"
+                                        class="btn btn-light border text-black-50 shadow-none"><i
+                                            class="fa fa-download"></i> Download
+                                        PDF</button>
+                                    <p class="mt-4 mb-0"><a href="#" class="btn btn-primary">Make another Recharge</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Recharge_StatusFailure End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recharge_StatusFailure End -->
+
+    <!-- Recharge_StatusPending Modal
+    =========================== -->
+    <div id="Recharge_StatusPending" class="modal fade" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-0">
+                <div class="modal-body py-4 px-0">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 mt-1 me-1 mt-sm-2 me-sm-2"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!--  Recharge_StatusPending
+                    ====================== -->
+                    <div class="row" id="contentToConvert">
+                        <div class="col-11 col-md-11 mx-auto">
+                            <div class="col-lg-12 text-center mt-3">
+                                <p class="text-success"><img src="images/TardgoLogo.png" alt="TardgoLogo" width="120px">
+                                </p>
+                                <!-- <p class="text-success text-16 lh-1"><i class="fas fa-check-circle"></i></p> -->
+                                <!-- <p class="text-danger text-16 lh-1"><i class="fas fa-times-circle"></i></p> -->
+                                <h2 class="text-8 text-primary">Recharge Pending</h2>
+                            </div>
+                            <div class="">
+                                <div class="rounded p-4 p-lg-6 mb-4">
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Payment Amount</div>
+                                        <div class="col-sm text-sm-end fw-600 text-5">₹289.0</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Profit</div>
+                                        <div class="col-sm text-sm-end fw-600 text-6 text-success">₹8.670</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Operator Name:</div>
+                                        <div class="col-sm text-sm-end fw-600"><img
+                                                src="images/Operator/Vodafone_icon.png" alt="Vodafone_icon"
+                                                style="width: 24px; margin-right: 6px;">Vodafone</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Mobile No.</div>
+                                        <div class="col-sm text-sm-end fw-600">98989898</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Recharge ID:</div>
+                                        <div class="col-sm text-sm-end fw-600">31275735</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Operator ID:</div>
+                                        <div class="col-sm text-sm-end fw-600">GJH2300260911220068</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm text-muted">Date & Time:</div>
+                                        <div class="col-sm text-sm-end fw-600">26-Nov-2023 09:11:39AM</div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button onclick="downloadPDF()"
+                                        class="btn btn-light border text-black-50 shadow-none"><i
+                                            class="fa fa-download"></i> Download
+                                        PDF</button>
+                                    <p class="mt-4 mb-0"><a href="#" class="btn btn-primary">Make another Recharge</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Recharge_StatusPending End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recharge_StatusPending End -->
+
+    <!-- Remove Address -->
+    <div class="modal fade" id="RemoveAddressModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="RemoveAddressModalLabel">Remove Address</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to delete this address?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                        id="deleteAddressBtn">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Remove Address End -->
+
+    <!-- My Address Item Edit
+============================================= -->
+    <div class="offcanvas offcanvas-end" id="MyAddressItemEdit">
+        <form action="">
+            <div class="offcanvas-header">
+                <h4 class="offcanvas-title">Edit Address</h4>
+                <button type="reset" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="row">
+                    <div class="col-lg-12 mb-3">
+                        <div class="form__div Mobile_Number">
+                            <input type="text" class="form__input" id="Recharge_Mobile_Number_txt"
+                                placeholder="Full Name (Required*)" required>
+                            <label for="" class="form__label">Full Name (Required*)</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mb-3">
+                        <div class="form__div Mobile_Number">
+                            <input type="text" class="form__input" maxlength="10" id="Recharge_Mobile_Number_txt"
+                                placeholder="Mobile Number (Required*)" required>
+                            <label for="" class="form__label">Mobile Number (Required*)</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mb-3">
+                        <div class="form__div Mobile_Number">
+                            <input type="text" class="form__input" maxlength="10" id="Recharge_Mobile_Number_txt"
+                                placeholder="Alternate Mobile Number">
+                            <label for="" class="form__label">Alternate Mobile Number</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                        <select class="form-select rounded-7" id="operator_drp" required="">
+                            <option value="">Select a State</option>
+                            <option>1st Operator</option>
+                            <option>2nd Operator</option>
+                            <option>3rd Operator</option>
+                            <option>4th Operator</option>
+                            <option>5th Operator</option>
+                            <option>6th Operator</option>
+                            <option>7th Operator</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                        <select class="form-select rounded-7" id="operator_drp" required="">
+                            <option value="">Select a City</option>
+                            <option>1st Operator</option>
+                            <option>2nd Operator</option>
+                            <option>3rd Operator</option>
+                            <option>4th Operator</option>
+                            <option>5th Operator</option>
+                            <option>6th Operator</option>
+                            <option>7th Operator</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-12 mb-3">
+                        <div class="form__div Mobile_Number">
+                            <input type="text" class="form__input" id="Recharge_Mobile_Number_txt"
+                                placeholder="House No., Builbing Name(Required*)" required>
+                            <label for="" class="form__label">Builbing Name(Required*)</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mb-3">
+                        <div class="form__div Mobile_Number">
+                            <input type="text" class="form__input" id="Recharge_Mobile_Number_txt"
+                                placeholder="Rode Name, Area, Colony (Required*)" required>
+                            <label for="" class="form__label">Rode Name(Required*)</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mb-3">
+                        <div class="form__div Mobile_Number">
+                            <input type="text" class="form__input " id="Recharge_Mobile_Number_txt"
+                                placeholder="+Add Nearby Famous Shop/Mall/Landmark (Required*)" required>
+                            <label for="" class="form__label">Shop/Mall(Required*)</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mb-3 text-5 text-primary">Type of Address</div>
+                    <div class="radio-inputs col-lg-6 mb-7">
+                        <label class="col-lg-12">
+                            <input class="radio-input" type="radio" name="engine">
+                            <span class="radio-tile">
+                                <span class="radio-icon">
+                                    <img src="images/MyProfile/home.svg" alt="Home">
+                                </span>
+                                <span class="radio-label">Home</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="radio-inputs col-lg-6 mb-7">
+                        <label class="col-lg-12">
+                            <input checked="" class="radio-input" type="radio" name="engine">
+                            <span class="radio-tile">
+                                <span class="radio-icon">
+                                    <img src="images/MyProfile/office.svg" alt="Office">
+                                </span>
+                                <span class="radio-label">Office</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="col-lg-12 mb-3 fixed-bottom bg-white">
+                        <button type="submit" class="btn btn-outline-primary col-lg-12">SAVE ADDRESS</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- My Address Item Edit end -->
+
+    <!-- Script -->
+    <script>
+
+    </script>
+
+
+
+    <script>
+        function hideDiv(className) {
+            // Get the elements with the specified class name
+            var targetDivs = document.getElementsByClassName(className);
+
+            // Hide each element with the specified class name
+            for (var i = 0; i < targetDivs.length; i++) { targetDivs[i].style.display = 'none'; }
+        } 
+    </script>
+
+    <!-- offical -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script> -->
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="js/theme.js"></script>
+    <!-- <script src="js/extra.js"></script> -->
+    <!-- <script src="js/ReportHistory.js"></script> -->
+    <script src="js/MyProfile.js"></script>
+    <script src="vendor/bootstrap/js/getbootstrap.min.js"></script>
+
+
+    
+</body>
+
+</html>

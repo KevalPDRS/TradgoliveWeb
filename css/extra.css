@@ -1,0 +1,888 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root {
+    /*===== Colores =====*/
+    --first-color: #20A7DB;
+    --input-color: #80868B;
+    --border-color: #808080;
+
+    /*===== Fuente y tipografia =====*/
+    --body-font: 'poppins', sans-serif;
+    --normal-font-size: 1rem;
+    --small-font-size: .75rem;
+}
+
+/*===== BASE =====*/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+h1 {
+    margin: 0;
+}
+
+/*===== FORM =====*/
+.l-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    width: 360px;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.form__title {
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.form__div {
+    position: relative;
+    height: 52px;
+    /* margin-bottom: 1.5rem; */
+}
+
+.form__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: var(--normal-font-size);
+    border: 1px solid var(--border-color);
+    border-radius: .5rem;
+    outline: none;
+    padding: 1rem;
+    background: none;
+    z-index: 1;
+}
+
+.form__label {
+    position: absolute;
+    left: 15px;
+    top: 16px;
+    padding: 0 .25rem;
+    background-color: #FFFFFF;
+    color: #b1b4b6;
+    font-size: var(--normal-font-size);
+    transition: .3s;
+
+}
+
+.form__button {
+    display: block;
+    margin-left: auto;
+    padding: .75rem 2rem;
+    outline: none;
+    border: none;
+    background-color: var(--first-color);
+    color: #b1b4b6;
+    font-size: var(--normal-font-size);
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form__button:hover {
+    box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
+}
+
+/*Input focus move up label*/
+.form__input:focus+.form__label {
+    top: -10px;
+    left: 12px;
+    color: var(--first-color);
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 10;
+}
+
+/*Input focus sticky top label*/
+.form__input:not(:placeholder-shown).form__input:not(:focus)+.form__label {
+    top: -10px;
+    left: 12px;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 10;
+}
+
+input.too-short {
+    border-color: red;
+}
+
+.form__input_short:focus+.form__label {
+    color: red;
+}
+
+input.reached-max-length {
+    border-color: #20A7DB;
+}
+
+.form__input_max_length:focus+.form__label {
+    color: #20A7DB;
+}
+
+.form__input::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity .2s ease-out;
+}
+
+.form__input::-moz-placeholder {
+    opacity: 0;
+    transition: opacity .2s ease-out;
+}
+
+.form__input:focus::-webkit-input-placeholder {
+    opacity: 1;
+    transition-delay: .2s;
+}
+
+.form__input:focus::-moz-placeholder {
+    opacity: 1;
+    transition-delay: .2s;
+}
+
+.eye-icon {
+    cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(142px, 1fr));
+    gap: 12px;
+    /* margin: 25px; */
+}
+
+/* End Input Box -------------------------------------------------- */
+/* .bg_animation_container {
+    width: 100%;
+    height: 100%;
+    background: #1B1464;
+    position: relative;
+    overflow: hidden;
+} */
+
+/* .bg_animation_container::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #20a6db17 10%, transparent 20%),
+        radial-gradient(circle, transparent 10%, #1B1464 20%);
+    background-size: 30px 30px;
+    animation: moveBackground 8s linear infinite;
+} */
+
+/* @keyframes moveBackground {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(20%, 20%);
+    }
+} */
+
+/* add_money_btn -------------------------------------------------- */
+.add_money_btn {
+    border: none;
+    display: block;
+    position: relative;
+    padding: 10px 15px;
+    font-size: 18px;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    color: #20A7DB;
+    z-index: 1;
+    text-align: center;
+    font-family: inherit;
+    font-weight: 400;
+    border-radius: 12px;
+}
+
+.add_money_btn span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 1px solid #20A7DB;
+    border-radius: 16px;
+}
+
+.add_money_btn span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: var(--lightgray);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.7s;
+}
+
+.add_money_btn:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: #20A7DB;
+}
+
+.add_money_btn:hover {
+    color: white;
+}
+
+.add_money_btn:active span::before {
+    background: #20A7DB;
+}
+
+.add_money_btn svg {
+    fill: #20A7DB;
+    margin: 0px 0px 0px 10px;
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.add_money_btn:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.add_money_btn:hover svg {
+    fill: #FFFFFF;
+    transform: rotate(0deg) scale(1.1);
+}
+
+.add_money_btn:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+/* End Add Money Btn -------------------------------------------------- */
+
+/* User Name And Icon -------------------------------------------------- */
+.UserNameAndIconContener {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.UserNameAndIconContener.UserNameAndIcon {
+    width: 12rem;
+    height: auto;
+}
+
+.UserNameAndIconContener.UserNameAndIcon .circle {
+    transition: all 0.45s cubic-bezier(1, 0.076, 0, 0.65);
+    position: relative;
+    display: block;
+    margin: 0px 10px 0px 0px;
+    width: 3rem;
+    height: 3rem;
+    background: #20A7DB;
+    border-radius: 1.625rem;
+}
+
+.UserNameAndIconContener.UserNameAndIcon .circle .user-icon {
+    transition: all 0.45s cubic-bezier(1, 0.076, 0, 0.65);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+    color: #FFFFFF;
+    margin: 7px;
+}
+
+.UserNameAndIconContener.UserNameAndIcon .button-text {
+    transition: all 0.45s cubic-bezier(1, 0.076, 0, 0.65);
+    position: absolute;
+    top: 0;
+    left: 10px;
+    right: 0;
+    bottom: 0;
+    padding: 12px 0;
+    margin: 0 0 0 45px;
+    color: #20A7DB;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.UserNameAndIconContener:hover .circle {
+    width: 100%;
+}
+
+.UserNameAndIconContener:hover .button-text {
+    color: #fff;
+}
+
+.dropdown:hover .UserNameAndIconContener .circle {
+    width: 100%;
+}
+
+.dropdown:hover .UserNameAndIconContener .button-text {
+    color: #fff;
+}
+
+/* End UserNameAndIcon -------------------------------------------------- */
+
+.tradgo_icon {
+    width: 150px;
+}
+
+.notificationIcon,
+.supportAgent {
+    width: 24px;
+    height: 24px;
+    /* fill: #FFFFFF; */
+    fill: #A6A6A7;
+}
+
+.user-icon {
+    width: 14px;
+    height: 16px;
+}
+
+.ViewPlans .nav-item {
+    height: 100%;
+    text-align: start;
+}
+
+.container .nav .nav-item .nav-link span img {
+    transition: all .5s ease;
+    border-radius: 50%;
+}
+
+.container .nav .nav-item .nav-link span img:hover {
+    transition: all .5s;
+    scale: .9;
+    /* border: 2px solid #20A7DB; */
+}
+
+.dashboard .nav-item {
+    height: 100%;
+    text-align: center;
+}
+
+.dashboard .nav-item a div img {
+    width: 60px;
+}
+
+.nav-pills .nav-link.active {
+    background: #20A7DB;
+}
+
+.ReportHistory .nav-item {
+    height: 100%;
+    text-align: start;
+    padding: 3px 5px;
+}
+
+.ReportHistory .nav-item a {
+    padding: 5px 10px;
+}
+
+.ReportHistory .nav-item a div img {
+    width: 60px;
+}
+
+@media screen and (max-width: 1440px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(146px, 1fr));
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(101px, 1fr));
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-link {
+        padding: 0px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(101px, 1fr));
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .ReferAndEarnImage {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .tradgo_icon {
+        width: 130px;
+    }
+
+    .notificationIcon,
+    .supportAgent {
+        width: 23px;
+        height: 23px;
+    }
+
+    .container-fluid {
+        padding: 0px 16px;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        right: 0px;
+    }
+
+    .grid-item a div img {
+        width: 56px;
+    }
+
+    .grid-item a {
+        font-size: 14px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .tradgo_icon {
+        width: 115px;
+    }
+
+    .notificationIcon,
+    .supportAgent {
+        width: 21px;
+        height: 21px;
+    }
+
+    .grid-item a div img {
+        width: 53px;
+    }
+
+    .grid-item a {
+        font-size: 12px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+    }
+}
+
+@media screen and (max-width: 395px) {
+
+    .tradgo_icon {
+        width: 100px;
+    }
+
+    .notificationIcon,
+    .supportAgent {
+        width: 20px;
+        height: 20px;
+    }
+
+    .grid-item a div img {
+        width: 50px;
+    }
+
+    .grid-item a {
+        font-size: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+    }
+}
+
+.head_menu {
+    color: #A6A6A7;
+    padding: 4vh 0px;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    color: #20A7DB;
+    padding: 2px 10px;
+}
+
+.dropdown-item img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+ul.nav li.dropdown:hover ul.dropdown-menu {
+    display: block;
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.add_money {
+    cursor: pointer;
+}
+
+.card-body .card-body_scroll {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.card-body_scroll::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.card-body_scroll::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+    visibility: hidden;
+    background: grey;
+}
+
+.card-body_scroll:hover::-webkit-scrollbar {
+    visibility: visible;
+}
+
+.card-body_scroll:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+.ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 3px solid rgba(0, 0, 0, .3);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 150px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #20A7DB;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #20A7DB;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.ring:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #20A7DB;
+    border-right: 3px solid #20A7DB;
+    border-radius: 50%;
+    animation: animateC 2s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ring img {
+    width: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ring span {
+    display: block;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    border-radius: 50%;
+    background: transparent;
+    transform-origin: left;
+    animation: animate 2s linear infinite;
+}
+
+.ring span:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #20A7DB;
+    top: -6px;
+    right: -8px;
+    box-shadow: 0 0 20px #20A7DB;
+}
+
+@keyframes animateC {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(405deg);
+    }
+}
+
+
+.dashboardServiceContinueModalContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .3rem;
+    outline: 0
+}
+
+
+.LedgerReportScrollbar .row {
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.LedgerReportScrollbar .row::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.LedgerReportScrollbar .row::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+    visibility: hidden;
+    background: grey;
+}
+
+.LedgerReportScrollbar .row:hover::-webkit-scrollbar {
+    visibility: visible;
+}
+
+.LedgerReportScrollbar .row:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+/* Notification Div */
+#notification_Div,
+#supportAgent_Div {
+    min-width: 50vw;
+    background: #F0F1F7;
+}
+
+.notification_img_div {
+    border: 1px solid red;
+    background: #20A7DB;
+    border-radius: 50% 50% 50% 0%;
+    height: 70px;
+    width: 70px;
+    z-index: 1;
+    position: relative;
+}
+
+.notification_img_div img {
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.notification_message_div {
+    border: 1px solid blue;
+    background: #1E70AF;
+    border-radius: 0% 30px 30px 0%;
+    height: 60px;
+    width: 80%;
+    position: absolute;
+    left: 60px;
+    padding-left: 25px;
+}
+
+/* Notification Badge */
+
+.notification {
+    position: relative;
+}
+
+.notification .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: -2px;
+    right: 10px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+
+.box {
+    background: #1B1464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2px;
+    padding: 10px 0px 0px 0px;
+    font-size: 2em;
+    line-height: 1;
+    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
+    background-repeat: no-repeat;
+}
+
+.box-h {
+    /* // Animated */
+    background-image:
+        repeating-linear-gradient(0deg, #FFFFFF, #FFFFFF 10px, transparent 10px, transparent 20px),
+        /* // left */
+        repeating-linear-gradient(90deg, #FFFFFF, #FFFFFF 10px, transparent 10px, transparent 20px),
+        /* // top */
+        repeating-linear-gradient(180deg, #FFFFFF, #FFFFFF 10px, transparent 10px, transparent 20px),
+        /* // right */
+        repeating-linear-gradient(270deg, #FFFFFF, #FFFFFF 10px, transparent 10px, transparent 20px)
+        /* // bottom */
+    ;
+    background-size: 0px calc(100% + 20px), calc(100% + 20px) 0px, 0px calc(100% + 20px), calc(100% + 20px) 2px;
+    animation: boxBorderAnimation 1s infinite linear;
+}
+
+@keyframes boxBorderAnimation {
+    from {
+        background-position: 0 0, -20px 0, 100% -20px, 0 100%;
+    }
+
+    to {
+        background-position: 0 -20px, 0 0, 100% 0, -20px 100%;
+    }
+}
+
+/* Fivestar Rating ------------------------------*/
+.rate {
+    float: left;
+    /* height: 46px; */
+    padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    padding-top: 10px;
+    float: right;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 45px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}

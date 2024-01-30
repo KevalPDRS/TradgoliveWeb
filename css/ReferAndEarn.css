@@ -1,0 +1,114 @@
+#referralCodeSnackbar {
+    visibility: hidden;
+    min-width: 280px;
+    /* background-color: #333; */
+    background-image: linear-gradient(90deg, #1B1464, #20A7DB);
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#referralCodeSnackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+#knowMore_ReferAndEarn,
+#ReferralList_ReferAndEarn {
+    min-width: 280px;
+    max-width: 450px;
+    width: 100%;
+    background: #F0F1F7;
+}
+
+.Howitworks_ReferAndEarn {
+    tr {
+        gap: 10px;
+        display: flex;
+        align-items: start;
+        margin-top: 10px;
+    }
+}
+
+.ReferralListDiv_ReferAndEarn {
+    height: 100%;
+    overflow: auto;
+    tr {
+        gap: 10px;
+        display: flex;
+        align-items: start;
+        margin-top: 10px;
+
+        td:nth-child(1){
+            background: #1B1464;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            position: relative;
+
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

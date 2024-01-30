@@ -1,0 +1,224 @@
+html,
+body {
+  height: 100%;
+}
+
+/* Edit profile pic ------------------------------ */
+.avatar_upload {
+  position: relative;
+  max-width: 165px;
+}
+
+.avatar_upload .avatar_edit {
+  position: absolute;
+  right: 12px;
+  z-index: 1;
+  bottom: 0px;
+}
+
+.avatar_upload .avatar_edit input {
+  display: none;
+}
+
+.avatar_upload .avatar_edit input+label {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #FFFFFF;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+
+.avatar_upload .avatar_edit input+label:hover {
+  background: #f1f1f1;
+  border-color: #d6d6d6;
+}
+
+.avatar_upload .avatar_edit input+label:after {
+  content: "\f040";
+  font-family: 'FontAwesome';
+  color: #757575;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+
+.avatar_upload .avatar_preview {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid #F8F8F8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.avatar_upload .avatar_preview>div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* My Address Item Edit ------------------------------ */
+#MyAddressItemEdit {
+  min-width: 100vw;
+  background: #FFFFFF;
+}
+
+#MyAddressMapEdit {
+  min-width: 100vw;
+  background: #FFFFFF;
+}
+
+.MyAddressMapFrame {
+  width: 100%;
+  height: 100vh;
+}
+
+.MyAddressItem {
+  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.radio-inputs {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* max-width: 350px; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-inputs>* {
+  margin: 6px;
+}
+
+.radio-input:checked+.radio-tile {
+  border-color: #2260ff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: #2260ff;
+}
+
+.radio-input:checked+.radio-tile:before {
+  transform: scale(1);
+  opacity: 1;
+  background-color: #2260ff;
+  border-color: #2260ff;
+}
+
+.radio-input:checked+.radio-tile .radio-icon img {
+  width: 20px;
+}
+
+.radio-input:checked+.radio-tile .radio-label {
+  color: #2260ff;
+}
+
+.radio-input:focus+.radio-tile {
+  border-color: #2260ff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5c9fc;
+}
+
+.radio-input:focus+.radio-tile:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.radio-tile {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  width: 100%;
+  /* min-height: 80px; */
+  border-radius: 0.5rem;
+  border: 2px solid #b5bfd9;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.15s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio-tile:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid #b5bfd9;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 0.25rem;
+  left: 0.25rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.25s ease;
+}
+
+.radio-tile:hover {
+  border-color: #2260ff;
+}
+
+.radio-tile:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.radio-icon img {
+  margin: 6px 6px 6px 50px;
+  fill: #494949;
+  width: 20px;
+}
+
+.radio-label {
+  color: #707070;
+  transition: 0.375s ease;
+  text-align: center;
+  font-size: 13px;
+  padding: 6px 12px 6px 6px;
+}
+
+.radio-input {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.offcanvas-body::-webkit-scrollbar {
+  width: 5px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb {
+  width: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  visibility: hidden;
+  background: rgb(255, 255, 255);
+}
+
+.offcanvas-body:hover::-webkit-scrollbar {
+  visibility: visible;
+}
+
+.offcanvas-body:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
