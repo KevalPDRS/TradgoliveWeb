@@ -8,44 +8,44 @@
                             <ul class="nav secondary-nav alternate" id="myTab" role="tablist">
                                 <li class="nav-item active">
                                     <a class="nav-link" id="mobile-recharge-tab" data-bs-toggle="tab" href="#mobile-recharge" aria-controls="mobile-recharge">
-                                        <span><img src="../Recharge/images/recharge/Mobile.png" alt="" width="70px" height="70px"></span>Mobile
+                                        <span><img src="<?php echo base_url(); ?>images/recharge/Mobile.png" alt="" width="70px" height="70px"></span>Mobile
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" id="dth-recharge-tab" data-bs-toggle="tab" href="#dthpayment" aria-controls="dthpayment">
-                                        <span><img src="../Recharge/images/recharge/DTH.png" alt="" width="70px" height="70px"></span> DTH
+                                        <span><img src="<?php echo base_url(); ?>images/recharge/DTH.png" alt="" width="70px" height="70px"></span> DTH
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" id="electricity-recharge-tab" data-bs-toggle="tab" href="#electricity" aria-controls="electricity">
-                                        <span><img src="../Recharge/images/recharge/Electricity.png" alt="" width="70px" height="70px"></span> Electricity</a>
+                                        <span><img src="<?php echo base_url(); ?>images/recharge/Electricity.png" alt="" width="70px" height="70px"></span> Electricity</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" id="GasCylinder-recharge-tab" data-bs-toggle="tab" href="#GasCylinder" aria-controls="GasCylinder">
-                                        <span><img src="../Recharge/images/recharge/GasCylinder.png" alt="" width="70px" height="70px"></span> Gas Cylinder</a>
+                                        <span><img src="<?php echo base_url(); ?>images/recharge/GasCylinder.png" alt="" width="70px" height="70px"></span> Gas Cylinder</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" id="RedeemCode-recharge-tab" data-bs-toggle="tab" href="#RedeemCode" aria-controls="RedeemCode">
-                                        <span><img src="../Recharge/images/recharge/RedeemCode.png" alt="" width="70px" height="70px"></span> Redeem Code</a>
+                                        <span><img src="<?php echo base_url(); ?>images/recharge/RedeemCode.png" alt="" width="70px" height="70px"></span> Redeem Code</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" id="PipedGas-recharge-tab" data-bs-toggle="tab" href="#PipedGas" aria-controls="PipedGas">
-                                        <span><img src="../Recharge/images/recharge/PipedGas.png" alt="" width="70px" height="70px"></span>
+                                        <span><img src="<?php echo base_url(); ?>images/recharge/PipedGas.png" alt="" width="70px" height="70px"></span>
                                         Piped GAS</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" id="Water-recharge-tab" data-bs-toggle="tab" href="#Water" aria-controls="Water">
-                                        <span><img src="../Recharge/images/recharge/Water.png" alt="" width="70px" height="70px"></span>
+                                        <span><img src="<?php echo base_url(); ?>images/recharge/Water.png" alt="" width="70px" height="70px"></span>
                                         Water</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" id="FastTAG-recharge-tab" data-bs-toggle="tab" href="#FastTAG" aria-controls="FastTAG">
-                                        <span><img src="../Recharge/images/recharge/FastTAG.png" alt="" width="70px" height="70px"></span>
+                                        <span><img src="<?php echo base_url(); ?>images/recharge/FastTAG.png" alt="" width="70px" height="70px"></span>
                                         Fast TAG</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" id="More-recharge-tab" data-bs-toggle="tab" href="#More" aria-controls="More">
-                                        <span><img src="../Recharge/images/recharge/More.png" alt="" width="70px" height="70px"></span>
+                                        <span><img src="<?php echo base_url(); ?>images/recharge/More.png" alt="" width="70px" height="70px"></span>
                                         More
                                     </a>
                                 </li>
@@ -729,79 +729,79 @@
                                     <ul class="grid-container nav dashboard" id="myTab" role="tablist">
                                         <li class="nav-item">
                                             <a class="nav-link" id="Postpaid-recharge-tab" data-bs-toggle="tab" href="#Postpaid-recharge" aria-controls="Postpaid-recharge">
-                                                <div><img src="../Recharge/images/recharge/Postpaid.png" alt=""></div>
+                                                <div><img src="<?php echo base_url(); ?>images/recharge/Postpaid.png" alt=""></div>
                                                 Postpaid
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" id="LoneRepayment-recharge-tab" data-bs-toggle="tab" href="#LoneRepayment-recharge" aria-controls="LoneRepayment-recharge">
-                                                <div><img src="../Recharge/images/recharge/LoneRepayment.png" alt=""></div>
+                                                <div><img src="<?php echo base_url(); ?>images/recharge/LoneRepayment.png" alt=""></div>
                                                 Lone Repayment
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" id="Landline-recharge-tab" data-bs-toggle="tab" href="#Landline-recharge" aria-controls="Landline-recharge">
-                                                <div><img src="../Recharge/images/recharge/Landline.png" alt=""></div>
+                                                <div><img src="<?php echo base_url(); ?>images/recharge/Landline.png" alt=""></div>
                                                 Landline
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" id="Insurance-recharge-tab" data-bs-toggle="tab" href="#Insurance-recharge" aria-controls="Insurance-recharge">
-                                                <div><img src="../Recharge/images/recharge/Insurance.png" alt=""></div>
+                                                <div><img src="<?php echo base_url(); ?>images/recharge/Insurance.png" alt=""></div>
                                                 Insurance
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" id="CableTV-recharge-tab" data-bs-toggle="tab" href="#CableTV-recharge" aria-controls="CableTV-recharge">
-                                                <div><img src="../Recharge/images/recharge/CableTV.png" alt=""></div>
+                                                <div><img src="<?php echo base_url(); ?>images/recharge/CableTV.png" alt=""></div>
                                                 Cable TV
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" id="Broadband-recharge-tab" data-bs-toggle="tab" href="#Broadband-recharge" aria-controls="Broadband-recharge">
-                                                <div><img src="../Recharge/images/recharge/Broadband.png" alt=""></div>
+                                                <div><img src="<?php echo base_url(); ?>images/recharge/Broadband.png" alt=""></div>
                                                 Broadband
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" id="CreditCard-recharge-tab" data-bs-toggle="tab" href="#CreditCard-recharge" aria-controls="CreditCard-recharge">
-                                                <div><img src="../Recharge/images/recharge/CreditCard.png" alt=""></div>
+                                                <div><img src="<?php echo base_url(); ?>images/recharge/CreditCard.png" alt=""></div>
                                                 Credit Card
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" id="MunicipalTax-recharge-tab" data-bs-toggle="tab" href="#MunicipalTax-recharge" aria-controls="MunicipalTax-recharge">
-                                                <div><img src="../Recharge/images/recharge/MunicipalTax.png" alt=""></div>
+                                                <div><img src="<?php echo base_url(); ?>images/recharge/MunicipalTax.png" alt=""></div>
                                                 Municipal Tax
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" id="HousingSociety-recharge-tab" data-bs-toggle="tab" href="#HousingSociety-recharge" aria-controls="HousingSociety-recharge">
-                                                <div><img src="../Recharge/images/recharge/HousingSociety.png" alt=""></div>
+                                                <div><img src="<?php echo base_url(); ?>images/recharge/HousingSociety.png" alt=""></div>
                                                 Housing Society
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" id="Clubs_Associations-recharge-tab" data-bs-toggle="tab" href="#Clubs_Associations-recharge" aria-controls="Clubs_Associations-recharge">
-                                                <div><img src="../Recharge/images/recharge/Clubs&Associations.png" alt=""></div>
+                                                <div><img src="<?php echo base_url(); ?>images/recharge/Clubs&Associations.png" alt=""></div>
                                                 Clubs & Associations
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" id="EducationFees-recharge-tab" data-bs-toggle="tab" href="#EducationFees-recharge" aria-controls="EducationFees-recharge">
-                                                <div><img src="../Recharge/images/recharge/EducationFees.png" alt=""></div>
+                                                <div><img src="<?php echo base_url(); ?>images/recharge/EducationFees.png" alt=""></div>
                                                 Education Fees
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" id="Hospital_Pathology-recharge-tab" data-bs-toggle="tab" href="#Hospital_Pathology-recharge" aria-controls="Hospital_Pathology-recharge">
-                                                <div><img src="../Recharge/images/recharge/Hospital&Pathology.png" alt=""></div>
+                                                <div><img src="<?php echo base_url(); ?>images/recharge/Hospital&Pathology.png" alt=""></div>
                                                 Hospital & Pathology
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" id="SubscriptionFees-recharge-tab" data-bs-toggle="tab" href="#SubscriptionFees-recharge" aria-controls="SubscriptionFees-recharge">
-                                                <div><img src="../Recharge/images/recharge/SubscriptionFees.png" alt=""></div>
+                                                <div><img src="<?php echo base_url(); ?>images/recharge/SubscriptionFees.png" alt=""></div>
                                                 Subscription Fees
                                             </a>
                                         </li>
