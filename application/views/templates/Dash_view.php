@@ -539,7 +539,7 @@
                                             <hr>
                                             <div class="d-flex">
                                                 <h6>Customer Name:- </h6>
-                                                <h6 class="text-primary">Mr.Hansaben A Dalvadi</h6>
+                                                <h6 class="text-primary">Mr.Hasnaben A Dalvadi</h6>
                                             </div>
                                             <div class="d-flex">
                                                 <h6>Due Amount:- </h6>
