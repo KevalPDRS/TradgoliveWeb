@@ -1,9 +1,9 @@
 <div id="content">
-  <div class="pt-4 pb-5"
+  <div
     style="background: linear-gradient(180deg, #1B1464, #1C3D85);box-shadow: 0px 6px 4px 0px rgba(30, 93, 159, 0.50) inset;">
     <!-- bg-secondary -->
     <div class="container">
-      <div class="section py-4">
+      <div class="section px-0 py-3">
         <div class="container">
           <ul class="nav secondary-nav alternate" id="myTab" role="tablist">
             <li class="nav-item active">
@@ -1501,12 +1501,10 @@
 </section>
 <!-- Mobile App end -->
 <!-- Content end -->
-
-<!-- Document Wrapper end -->
-
 </div>
 
 <!-- Document Wrapper end -->
+
 <!-- Back to Top
 ============================================= -->
 <a id="back-to-top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a>
