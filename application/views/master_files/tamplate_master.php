@@ -389,7 +389,6 @@
   </div>
   <!-- Add Money Modal End -->
 
-
   <!-- Notification_Div
 ============================================= -->
   <div class="offcanvas offcanvas-end" id="notification_Div">
@@ -622,11 +621,6 @@
     </div>
   </div>
   <!-- Rate & Review end -->
-  <!-- Document Wrapper end -->
-  <!-- Login Modal
-=========================== -->
-
-  <!-- OTP Modal End -->
 
   <!-- Script -->
   <script src="vendor/jquery/jquery.min.js"></script>
