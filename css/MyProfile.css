@@ -11,7 +11,7 @@ body {
 
 .avatar_upload .avatar_edit {
   position: absolute;
-  right: 12px;
+  left: 115px;
   z-index: 1;
   bottom: 0px;
 }

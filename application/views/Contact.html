@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
     <link href="images/TardgoLogo.png" rel="icon" />
-    <title>Order & Booking</title>
+    <title>Contact</title>
     <meta name="description" content="Report History">
 
     <!-- Web Fonts
@@ -14,7 +14,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Stylesheet
 ============================================= -->
@@ -35,16 +34,9 @@
     <script src="vendor/bootstrap/js/getbootstrap.min.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
 
-
-    <link rel="stylesheet" type="text/css" href="css/OrderAndBooking.css" />
-
-
-    <script
-        src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
 </head>
 
 <body>
-
     <!-- Preloader -->
     <div id="preloader">
         <span class="ring">
@@ -69,93 +61,109 @@
 ============================================= -->
         <div id="content">
             <div class="container">
-                <div class="bg-white shadow-md rounded p-4">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h5 class="mb-4">Order & Booking</h5>
-                                <div class="card rounded-7" style="box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.25);">
-                                    <div class="row align-items-center mx-3">
-                                        <div class="col-sm-12 col-lg-1">
-                                            <i class="fa-solid fa-wallet text-primary" style="font-size: 50px;"></i>
-                                        </div>
-                                        <div class="col-sm-12 col-lg-11 card-body">
-                                            <h4 class="card-title mb-0">8.25</h4>
-                                            <p class="card-text mb-1">Main Wallet</p>
-                                            <a class="btn btn-primary px-2 py-1" data-bs-toggle="modal"
-                                                data-bs-target="#Add_Money_modal">Add Maney ></a>
-
-                                        </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="tab-content bg-white shadow-md rounded p-3">
+                            <div class="container tab-pane active"><br>
+                                <h3>Contact</h3>
+                                <hr class="mx-n4">
+                                <h4 class="text-center mb-2">We are Here!</h4>
+                                <div class="mb-4">Tradgo is a well-known name in the world of payment app serving over 3
+                                    Lakh users across the country. Over the years Tradgo has transformed to become one
+                                    of the leading financial services and investment apps in India. From recharge & bill
+                                    payments to investment & lending, Tradgo lets you do it all effortlessly. Tradgo has
+                                    always been known for offering safe and seamless UPI payments, utility bill
+                                    payments, mobile/DTH recharges</div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <p class="text-6 text-dark fw-400 mb-0">Get In Touch</p>
+                                        <p class="text-primary mb-0">Registered Office :</p>
+                                        <p class="text-secondary mb-2">Brajanagar Main Road, Lochapada Road, Down
+                                            Dhobanala Bridge, Brahmapur,
+                                            Odisha-760001</p>
+                                        <p class="text-primary mb-0">Corporate Office :</p>
+                                        <p class="text-secondary mb-2">Corporate Office :316 Trade Square, Near
+                                            Parishkar Flat, Khokhra Ahmedabad
+                                            380008</p>
+                                        <p class="text-primary mb-0">+91-97783 44449</p>
+                                        <p class="text-primary mb-0">info@tradgo.in</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="text-6 text-dark fw-400 mb-0">Office Hour</p>
+                                        <p class="text-primary mb-0">Monday-Saturday</p>
+                                        <p class="text-secondary mb-2">11am-7pm ET</p>
+                                        <p class="text-primary mb-0">Sunday</p>
+                                        <p class="text-secondary mb-2">11am-6pm ET</p>
                                     </div>
                                 </div>
-                                <ul class="nav nav-tabs mt-3" id="myTab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" id="Wallet_OrderAndBooking-tab" data-bs-toggle="tab"
-                                            href="#Wallet_OrderAndBooking" role="tab"
-                                            aria-controls="Wallet_OrderAndBooking" aria-selected="true">Wallet</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content my-3" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="Wallet_OrderAndBooking" role="tabpanel"
-                                        aria-labelledby="Wallet_OrderAndBooking-tab">
-                                        <div class="tab-content my-3">
-                                            <div class="tab-pane fade show active" id="first" role="tabpanel"
-                                                aria-labelledby="first-tab">
-                                                <div class="table-responsive-md">
-                                                    <table class="table table-hover Wallet_Table_OrderAndBooking">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>Transaction Type</th>
-                                                                <th>Tax ID</th>
-                                                                <th>Description</th>
-                                                                <th>Amount</th>
-                                                                <th>Date</th>
-                                                                <th>Closing Balance</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr class="FilterItems">
-                                                                <td class="align-middle">Wallet Credited By</td>
-                                                                <td class="align-middle">Tax ID: 33517675</td>
-                                                                <td class="align-middle">rjio|6351204687|15.00|33517675
-                                                                </td>
-                                                                <td class="align-middle text-success">₹0.05</td>
-                                                                <td class="align-middle">2024-01-15 18:16:28</td>
-                                                                <td class="align-middle">Closing Balance: ₹1.86</td>
-                                                            </tr>
-                                                            <tr class="FilterItems">
-                                                                <td class="align-middle">Wallet Credited By Recharge
-                                                                </td>
-                                                                <td class="align-middle">Tax ID: 33517675</td>
-                                                                <td class="align-middle">rjio|6351204687|15.00|33517675
-                                                                </td>
-                                                                <td class="align-middle text-danger">₹0.05</td>
-                                                                <td class="align-middle">2024-01-15 18:16:28</td>
-                                                                <td class="align-middle">Closing Balance: ₹1.86</td>
-                                                            </tr>
-                                                            <tr class="FilterItems">
-                                                                <td class="align-middle">Wallet Credited By Payment</td>
-                                                                <td class="align-middle">Tax ID: 33517675</td>
-                                                                <td class="align-middle">rjio|6351204687|15.00|33517675
-                                                                </td>
-                                                                <td class="align-middle text-success">₹0.05</td>
-                                                                <td class="align-middle">2024-01-15 18:16:28</td>
-                                                                <td class="align-middle">Closing Balance: ₹1.86</td>
-                                                            </tr>
-                                                            <tr class="FilterItems">
-                                                                <td class="align-middle">Wallet Credited By</td>
-                                                                <td class="align-middle">Tax ID: 33517675</td>
-                                                                <td class="align-middle">rjio|6351204687|15.00|33517675
-                                                                </td>
-                                                                <td class="align-middle text-danger">₹0.05</td>
-                                                                <td class="align-middle">2024-01-15 18:16:28</td>
-                                                                <td class="align-middle">Closing Balance: ₹1.86</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <p class="text-6 text-dark fw-400 mb-0">Got Any Questions?</p>
+                                        <p class="text-primary mb-3">Use the form below to get in touch with the sales
+                                            team</p>
+                                        <form id="recharge-bill" method="post">
+                                            <div class="mb-3">
+                                                <div class="form__div">
+                                                    <input type="text" class="form__input" required
+                                                        id="EnterName_Policies_txt" placeholder="Enter Name">
+                                                    <label class="form__label">Enter Name</label>
                                                 </div>
                                             </div>
-                                        </div>
+                                            <div class="mb-3">
+                                                <div class="form__div">
+                                                    <input type="email" class="form__input" required
+                                                        id="EnterEmailID_Policies_txt" placeholder="Email ID">
+                                                    <label class="form__label">Enter Email ID</label>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="form__div">
+                                                    <input type="text" class="form__input" maxlength="10"
+                                                        id="EnterMobileNumber_Policies_txt" required
+                                                        placeholder="Enter Mobile Number">
+                                                    <label class="form__label">Enter Mobile Number</label>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <select class="form-select rounded-7" id="subject" required="">
+                                                    <option value="">Select Your Subject</option>
+                                                    <option>Recharge & Bill</option>
+                                                    <option>Booking</option>
+                                                    <option>Account</option>
+                                                    <option>Payment</option>
+                                                    <!-- <option>Broadband</option> -->
+                                                    <!-- <option>CableTV</option> -->
+                                                    <!-- <option>ClubsAndAssociations</option> -->
+                                                    <!-- <option>CreditCard</option> -->
+                                                    <!-- <option>DTH</option> -->
+                                                    <!-- <option>DMT</option> -->
+                                                    <!-- <option>EducationFees</option> -->
+                                                    <!-- <option>Electricity</option> -->
+                                                    <!-- <option>Gas</option> -->
+                                                    <!-- <option>GooglePlay</option> -->
+                                                    <!-- <option>HospitalAndPathology</option> -->
+                                                    <!-- <option>HousingSociety</option> -->
+                                                    <!-- <option>Insurance</option> -->
+                                                    <!-- <option>Landline</option> -->
+                                                    <!-- <option>LoanRepayment</option> -->
+                                                    <!-- <option>Mobile</option> -->
+                                                    <!-- <option>MunicipalServices</option> -->
+                                                    <!-- <option>MunicipalTax</option> -->
+                                                    <!-- <option>PipedGas</option> -->
+                                                    <!-- <option>Postpaid</option> -->
+                                                    <!-- <option>SubscriptionFees</option> -->
+                                                    <!-- <option>Water</option> -->
+                                                    <option>Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <textarea class="form-control" rows="5" id="yourProblem" required
+                                                    placeholder="Specify your query"></textarea>
+                                            </div>
+                                            <div class="mb-3">
+                                                <button class="btn btn-primary" style="width: 100%;">Submit</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -163,15 +171,150 @@
                     </div>
                 </div>
             </div>
-            <!-- Content end -->
-
-            <!-- Footer
-      ============================================= -->
-            <footer id="footer"></footer>
-            <!-- Footer end -->
-
         </div>
-        <!-- Document Wrapper end -->
+
+        <!-- Content end -->
+
+        <!-- Footer
+      ============================================= -->
+        <footer id="footer"></footer>
+        <!-- Footer end -->
+
+
+
+        <!-- All Common Models
+            ============================================= -->
+
+        <!-- Add Money Modal
+============================== -->
+        <div id="Add_Money_modal" class="modal fade" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content border-0">
+                    <div class="modal-body py-4 px-0">
+                        <button type="button" class="btn-close position-absolute top-0 end-0 mt-1 me-1 mt-sm-2 me-sm-2"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                        <!-- Add Money Form
+=========================== -->
+                        <div class="row">
+                            <div class="col-11 col-md-10 mx-auto">
+                                <h4 class="text-center mt-3 mb-4">Add Money to Wallet</h4>
+                                <h3 class="text-center">₹</h3>
+                                <div class="text-center">
+                                    <input class="text-center mb-2"
+                                        style="width: 100%; border: none; outline: none; font-size: 50px;" type="tel"
+                                        placeholder="0" />
+                                    <h6 style="color: #67727C;">Minimum: ₹10; Maximum: ₹50000</h6>
+                                    <h5 class="mb-5">Select an option to pay</h5>
+                                    <div class="d-flex align-items-center text-lg-start">
+                                        <div style="margin-right: 25px;">
+                                            <input style="scale:1.5;" type="radio" placeholder="UPI App">
+                                        </div>
+                                        <div>
+                                            <h5>UPI App</h5>
+                                            <h6 class="text-primary">Payment using selected UPI App</h6>
+                                        </div>
+                                    </div>
+                                    <div class="d-grid my-4">
+                                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#AddMoney_TransactionSuccess">Continue</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Money Form End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="AddMoney_TransactionFail" class="modal fade" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content border-0">
+                    <div class="modal-body mx-3">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Responce Massage</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="row mt-4">
+                            <svg width="50" height="50" viewBox="0 0 100 100" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M77.0833 10.4165H85.4166C88.8684 10.4165 91.6666 13.2147 91.6666 16.6665V54.1665C91.6666 57.6183 88.8684 60.4165 85.4166 60.4165H77.0833V10.4165Z"
+                                    fill="#E22425" />
+                                <path
+                                    d="M22.9167 10.4165C20.6155 10.4165 18.75 12.282 18.75 14.5832V52.0832C18.75 57.8361 23.4137 62.4998 29.1667 62.4998H46.25L42.7704 74.0985C41.449 78.5031 42.6527 83.2776 45.9044 86.5292L49.2597 89.8845C50.1844 90.8092 51.7224 90.6633 52.4567 89.5812L69.3956 64.6186C70.3325 63.2379 70.8333 61.6079 70.8333 59.9394V14.5832C70.8333 12.282 68.9679 10.4165 66.6667 10.4165H22.9167Z"
+                                    fill="#E22425" />
+                                <path
+                                    d="M10.4167 35.4167C10.4167 29.6637 15.0804 25 20.8334 25H35.4167C41.1697 25 45.8334 29.6637 45.8334 35.4167C45.8334 41.1696 41.1697 45.8333 35.4167 45.8333H20.8334C15.0804 45.8333 10.4167 41.1696 10.4167 35.4167Z"
+                                    fill="#E22425" />
+                                <path
+                                    d="M8.33325 52.0832C8.33325 46.3302 12.997 41.6665 18.7499 41.6665H37.4999C43.2529 41.6665 47.9166 46.3302 47.9166 52.0832C47.9166 57.8361 43.2529 62.4998 37.4999 62.4998H18.7499C12.997 62.4998 8.33325 57.8361 8.33325 52.0832Z"
+                                    fill="#E22425" />
+                            </svg>
+                            <p class="col-sm text-danger text-center text-8 mb-0 mb-sm-3">Fail</p>
+                        </div>
+                        <div class="row">
+                            <p class="col-sm text-muted mb-0 mb-sm-3">Transaction Amount:</p>
+                            <p class="col-sm text-sm-end fw-500">155.00</p>
+                        </div>
+                        <div class="row">
+                            <p class="col-sm text-muted mb-0 mb-sm-3">Transaction ID:</p>
+                            <p class="col-sm text-sm-end fw-500">-</p>
+                        </div>
+                        <div class="d-grid my-4">
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#AddMoney_TransactionFail">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="AddMoney_TransactionSuccess" class="modal fade" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content border-0">
+                    <div class="modal-body mx-3">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Responce Massage</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row mt-4">
+                                <svg width="50" height="50" viewBox="0 0 100 100" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22.9167 39.5835H14.5834C11.1316 39.5835 8.33342 42.3817 8.33342 45.8335V83.3335C8.33342 86.7853 11.1316 89.5835 14.5834 89.5835H22.9167V39.5835Z"
+                                        fill="#11B84E" />
+                                    <path
+                                        d="M56.25 47.9167C56.25 42.1637 60.9137 37.5 66.6667 37.5H81.25C87.003 37.5 91.6667 42.1637 91.6667 47.9167C91.6667 53.6696 87.003 58.3333 81.25 58.3333H66.6667C60.9137 58.3333 56.25 53.6696 56.25 47.9167Z"
+                                        fill="#11B84E" />
+                                    <path
+                                        d="M54.1667 64.5832C54.1667 58.8302 58.8304 54.1665 64.5834 54.1665H79.1667C84.9197 54.1665 89.5834 58.8302 89.5834 64.5832C89.5834 70.3361 84.9197 74.9998 79.1667 74.9998H64.5834C58.8304 74.9998 54.1667 70.3361 54.1667 64.5832Z"
+                                        fill="#11B84E" />
+                                    <path
+                                        d="M29.1669 40.0603C29.1669 38.3918 29.6677 36.7618 30.6046 35.3811L47.5435 10.4185C48.2778 9.33641 49.8158 9.19047 50.7405 10.1152L54.0958 13.4705C57.3475 16.7221 58.5512 21.4965 57.2298 25.9011L53.7502 37.4998H70.8334C76.5864 37.4998 81.2501 42.1635 81.2501 47.9165V85.4165C81.2501 87.7177 79.3846 89.5832 77.0834 89.5832H33.3334C31.0322 89.5832 29.1667 87.7177 29.1667 85.4165L29.1669 40.0603Z"
+                                        fill="#11B84E" />
+                                </svg>
+                                <p class="col-sm text-success text-center text-8 mb-0 mb-sm-3">Success</p>
+                            </div>
+                            <div class="row">
+                                <p class="col-sm text-muted mb-0 mb-sm-3">Transaction Amount:</p>
+                                <p class="col-sm text-sm-end fw-500">155.00</p>
+                            </div>
+                            <div class="row">
+                                <p class="col-sm text-muted mb-0 mb-sm-3">Transaction ID:</p>
+                                <p class="col-sm text-sm-end fw-500">98989898</p>
+                            </div>
+                            <div class="d-grid my-4">
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#AddMoney_TransactionSuccess">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add Money Modal End -->
 
         <!-- Notification_Div
 ============================================= -->
@@ -329,20 +472,19 @@
                                         </div>
                                     </div>
                                     <!-- <div class="row">
-                    <div class="col-sm text-dark">BSNL Mobile Postpaid</div>
-                    <div class="col-sm text-sm-end text-success">0.2%</div>
-                  </div> -->
+                  <div class="col-sm text-dark">BSNL Mobile Postpaid</div>
+                  <div class="col-sm text-sm-end text-success">0.2%</div>
+                </div> -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- <div class="col-lg-7 CallSupportImage">
-          <img src="images/supportAgent/CallSupportImage.svg" alt="Call Support" class="my-auto"
-            style="width: 100%; max-height: 400px;">
-        </div> -->
+        <img src="images/supportAgent/CallSupportImage.svg" alt="Call Support" class="my-auto"
+          style="width: 100%; max-height: 400px;">
+      </div> -->
             </div>
-
         </div>
         <!-- supportAgent_Div end -->
 
@@ -353,7 +495,7 @@
                 <div class="modal-content border-0">
                     <div class="modal-body py-4 px-0">
                         <!-- Logout Check Form
-    ====================== -->
+      ====================== -->
                         <div class="row">
                             <div class="col-10 col-md-10 mx-auto">
                                 <br>
@@ -393,137 +535,6 @@
         </div>
         <!-- Logout Check Modal End -->
 
-        <!-- Add Money Modal
-============================== -->
-        <div id="Add_Money_modal" class="modal fade" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content border-0">
-                    <div class="modal-body py-4 px-0">
-                        <button type="button" class="btn-close position-absolute top-0 end-0 mt-1 me-1 mt-sm-2 me-sm-2"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-                        <!-- Add Money Form
-    =========================== -->
-                        <div class="row">
-                            <div class="col-11 col-md-10 mx-auto">
-                                <h4 class="text-center mt-3 mb-4">Add Money to Wallet</h4>
-                                <h3 class="text-center">₹</h3>
-                                <div class="text-center">
-                                    <input class="text-center mb-2"
-                                        style="width: 100%; border: none; outline: none; font-size: 50px;" type="tel"
-                                        placeholder="0" />
-                                    <h6 style="color: #67727C;">Minimum: ₹10; Maximum: ₹50000</h6>
-                                    <h5 class="mb-5">Select an option to pay</h5>
-                                    <div class="d-flex align-items-center text-lg-start">
-                                        <div style="margin-right: 25px;">
-                                            <input style="scale:1.5;" type="radio" placeholder="UPI App">
-                                        </div>
-                                        <div>
-                                            <h5>UPI App</h5>
-                                            <h6 class="text-primary">Payment using selected UPI App</h6>
-                                        </div>
-                                    </div>
-                                    <div class="d-grid my-4">
-                                        <button class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#AddMoney_TransactionSuccess">Continue</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Add Money Form End -->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="AddMoney_TransactionFail" class="modal fade" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content border-0">
-                    <div class="modal-body mx-3">
-                        <div class="modal-header">
-                            <h4 class="modal-title">Responce Massage</h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="row mt-4">
-                            <svg width="50" height="50" viewBox="0 0 100 100" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M77.0833 10.4165H85.4166C88.8684 10.4165 91.6666 13.2147 91.6666 16.6665V54.1665C91.6666 57.6183 88.8684 60.4165 85.4166 60.4165H77.0833V10.4165Z"
-                                    fill="#E22425" />
-                                <path
-                                    d="M22.9167 10.4165C20.6155 10.4165 18.75 12.282 18.75 14.5832V52.0832C18.75 57.8361 23.4137 62.4998 29.1667 62.4998H46.25L42.7704 74.0985C41.449 78.5031 42.6527 83.2776 45.9044 86.5292L49.2597 89.8845C50.1844 90.8092 51.7224 90.6633 52.4567 89.5812L69.3956 64.6186C70.3325 63.2379 70.8333 61.6079 70.8333 59.9394V14.5832C70.8333 12.282 68.9679 10.4165 66.6667 10.4165H22.9167Z"
-                                    fill="#E22425" />
-                                <path
-                                    d="M10.4167 35.4167C10.4167 29.6637 15.0804 25 20.8334 25H35.4167C41.1697 25 45.8334 29.6637 45.8334 35.4167C45.8334 41.1696 41.1697 45.8333 35.4167 45.8333H20.8334C15.0804 45.8333 10.4167 41.1696 10.4167 35.4167Z"
-                                    fill="#E22425" />
-                                <path
-                                    d="M8.33325 52.0832C8.33325 46.3302 12.997 41.6665 18.7499 41.6665H37.4999C43.2529 41.6665 47.9166 46.3302 47.9166 52.0832C47.9166 57.8361 43.2529 62.4998 37.4999 62.4998H18.7499C12.997 62.4998 8.33325 57.8361 8.33325 52.0832Z"
-                                    fill="#E22425" />
-                            </svg>
-                            <p class="col-sm text-danger text-center text-8 mb-0 mb-sm-3">Fail</p>
-                        </div>
-                        <div class="row">
-                            <p class="col-sm text-muted mb-0 mb-sm-3">Transaction Amount:</p>
-                            <p class="col-sm text-sm-end fw-500">155.00</p>
-                        </div>
-                        <div class="row">
-                            <p class="col-sm text-muted mb-0 mb-sm-3">Transaction ID:</p>
-                            <p class="col-sm text-sm-end fw-500">-</p>
-                        </div>
-                        <div class="d-grid my-4">
-                            <button class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#AddMoney_TransactionFail">Continue</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="AddMoney_TransactionSuccess" class="modal fade" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content border-0">
-                    <div class="modal-body mx-3">
-                        <div class="modal-header">
-                            <h4 class="modal-title">Responce Massage</h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row mt-4">
-                                <svg width="50" height="50" viewBox="0 0 100 100" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.9167 39.5835H14.5834C11.1316 39.5835 8.33342 42.3817 8.33342 45.8335V83.3335C8.33342 86.7853 11.1316 89.5835 14.5834 89.5835H22.9167V39.5835Z"
-                                        fill="#11B84E" />
-                                    <path
-                                        d="M56.25 47.9167C56.25 42.1637 60.9137 37.5 66.6667 37.5H81.25C87.003 37.5 91.6667 42.1637 91.6667 47.9167C91.6667 53.6696 87.003 58.3333 81.25 58.3333H66.6667C60.9137 58.3333 56.25 53.6696 56.25 47.9167Z"
-                                        fill="#11B84E" />
-                                    <path
-                                        d="M54.1667 64.5832C54.1667 58.8302 58.8304 54.1665 64.5834 54.1665H79.1667C84.9197 54.1665 89.5834 58.8302 89.5834 64.5832C89.5834 70.3361 84.9197 74.9998 79.1667 74.9998H64.5834C58.8304 74.9998 54.1667 70.3361 54.1667 64.5832Z"
-                                        fill="#11B84E" />
-                                    <path
-                                        d="M29.1669 40.0603C29.1669 38.3918 29.6677 36.7618 30.6046 35.3811L47.5435 10.4185C48.2778 9.33641 49.8158 9.19047 50.7405 10.1152L54.0958 13.4705C57.3475 16.7221 58.5512 21.4965 57.2298 25.9011L53.7502 37.4998H70.8334C76.5864 37.4998 81.2501 42.1635 81.2501 47.9165V85.4165C81.2501 87.7177 79.3846 89.5832 77.0834 89.5832H33.3334C31.0322 89.5832 29.1667 87.7177 29.1667 85.4165L29.1669 40.0603Z"
-                                        fill="#11B84E" />
-                                </svg>
-                                <p class="col-sm text-success text-center text-8 mb-0 mb-sm-3">Success</p>
-                            </div>
-                            <div class="row">
-                                <p class="col-sm text-muted mb-0 mb-sm-3">Transaction Amount:</p>
-                                <p class="col-sm text-sm-end fw-500">155.00</p>
-                            </div>
-                            <div class="row">
-                                <p class="col-sm text-muted mb-0 mb-sm-3">Transaction ID:</p>
-                                <p class="col-sm text-sm-end fw-500">98989898</p>
-                            </div>
-                            <div class="d-grid my-4">
-                                <button class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#AddMoney_TransactionSuccess">Continue</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Add Money Modal End -->
-
         <!-- Rate & Review
 ============================================= -->
         <div class="offcanvas offcanvas-bottom" id="RateReviewBottomOffcanvas">
@@ -556,13 +567,19 @@
         </div>
         <!-- Rate & Review end -->
 
-        <!-- Script -->
-        <script>
-            $(function () {
-                $("#header").load("Header.html");
-                $("#footer").load("Footer.html");
-            });
-        </script>
+        <!-- All Common Models End -->
+
+    </div>
+
+    <!-- Document Wrapper end -->
+
+    <!-- Script -->
+    <script>
+        $(function () {
+            $("#header").load("Header.html");
+            $("#footer").load("Footer.html");
+        });
+    </script>
 
 </body>
 
