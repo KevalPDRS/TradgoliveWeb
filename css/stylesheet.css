@@ -1334,9 +1334,9 @@ html[dir="rtl"] .login-signup ul.navbar-nav>li.dropdown:not(.notifications)>.dro
 
   /* Mobile Menu Button */
   .navbar-toggler {
-    width: 25px;
+    width: auto;
     height: 30px;
-    padding: 10px;
+    /* padding: 10px; */
     margin: 0px 10px;
     position: relative;
     -webkit-transform: rotate(0deg);
