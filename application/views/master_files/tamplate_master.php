@@ -52,7 +52,6 @@
       <div class="container">
         <div class="header-row">
           <div class="header-column justify-content-start">
-
             <!-- Logo
           ============================================= -->
             <div class="logo me-2 me-lg-3">
@@ -119,9 +118,9 @@
                   d="M18 11.03C17.52 8.18 15.04 6 12.05 6C9.02 6 5.76 8.51 6.02 12.45C8.49 11.44 10.35 9.24 10.88 6.56C12.19 9.19 14.88 11 18 11.03Z" />
               </svg>
             </a>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#PaytmPaymentSuccessful_modal">
+            <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#PaytmPaymentSuccessful_modal">
               <img src="" alt="Paytm">
-            </a>
+            </a> -->
             <!-- Collapse Button
       =============================== -->
             <div class="vr mx-2 h-25 my-auto"></div>
@@ -130,7 +129,7 @@
             <nav class="login-signup navbar navbar-expand">
               <ul class="navbar-nav">
                 <li class="profile dropdown active">
-                  <a class="pe-0 dropdown-toggle" href="SignIn.html">
+                  <a class="pe-0 dropdown-toggle" href="./application/views/SignIn.html">
                     <div class="UserNameAndIconContener UserNameAndIcon">
                       <span class="circle" aria-hidden="true">
                         <span class="user-icon"><i class="fas fa-user"></i></span>
